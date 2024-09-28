@@ -20,7 +20,11 @@ This is the frontend for the customer authentication app built using **React** a
 ### Prerequisites
 - **Node.js** and **npm** installed on your machine.
 
-### 1. Clone the repository
+### 1. Clone the repository and start app
 ```bash
-git clone <repository-url>
-cd customer-auth-frontend
+git clone https://github.com/mKabole/pamasola-client.git
+cd pamasola-client
+npm install
+npm start
+
+
