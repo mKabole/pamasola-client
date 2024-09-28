@@ -70,11 +70,11 @@ const Home = ({ username, setToken, setUsername }) => {
   const handleLogout = () => {
     setToken(null);
     setUsername(null);
-    navigate('/auth'); // Redirect to login/signup page after logout
+    navigate('/'); // Redirect to login/signup page after logout
   };
 
   if (!username) {
-    return <Navigate to="/auth" />;
+    return <Navigate to="/" />;
   }
 
   return (
@@ -98,9 +98,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/auth" element={<Auth setToken={setToken} setUsername={setUsername} />} />
+        <Route path="/" element={<Auth setToken={setToken} setUsername={setUsername} />} />
         <Route path="/home" element={<Home username={username} setToken={setToken} setUsername={setUsername} />} />
-        <Route path="*" element={<Navigate to="/auth" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
