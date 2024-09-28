@@ -11,7 +11,7 @@ const Auth = ({ setToken, setUsername }) => {
 
   const handleAuth = async (e) => {
     e.preventDefault();
-    const url = isLogin ? 'http://localhost:5000/login' : 'http://localhost:5000/register';
+    const url = isLogin ? 'http://196.46.192.67:5000/login' : 'http://196.46.192.67:5000/register';
 
     try {
       const response = await axios.post(url, { username, password });
